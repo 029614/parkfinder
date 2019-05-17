@@ -18,8 +18,8 @@
             <input type="text" name="park-name" id="js-park-name" >
 
             <h2>Or, Search by state:</h2>
-            <label for="state">State</label>
-            <select name="state" id="js-state">
+            <label for="state">States</label>
+            <select name="state" id="js-state" multiple>
               <option disabled selected value> -- select an option -- </option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -79,6 +79,8 @@
 
             <input type="submit" value="Find!">
         </form>
+
+        <p>Please hold down 'Ctrl' to make multiple selections</p>
 
         <p id="js-error-message" class="error-message"></p>
         <section id="results" class="hidden">
